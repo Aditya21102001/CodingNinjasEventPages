@@ -1,7 +1,6 @@
-
 .tags-container {
   width: max-content;
-    max-width: fit-content;
+  max-width: fit-content;
 }
 
 .tags-container .heading {
@@ -31,16 +30,15 @@
 }
 
 .tags-container .tags-wrapper .tag p.text {
-  margin: 0!important;
+  margin: 0 !important;
 }
 
-.count
-{
+.count {
   cursor: pointer;
   color: rgb(255, 102, 0);
 }
 
-.mobile-filter{
+.mobile-filter {
   display: none;
   margin-top: 1rem;
   position: fixed;
@@ -49,19 +47,17 @@
   bottom: 0;
   left: 0;
   background: #fff;
-    /* z-index: 2147483650; */
+  /* z-index: 2147483650; */
   overflow: scroll;
 }
 
-@media (min-width: 720px){
-  .full-tag-mobile{
+@media (min-width: 720px) {
+  .full-tag-mobile {
     display: none;
   }
 }
-@media (max-width: 720px){
-  .full-tag{
-    display: none;
-  }
+@media (max-width: 720px) {
+ 
   /*
   .mobile-filter .apply-button {
     background: linear-gradient(95.95deg,#f6430f .78%,#ee9f15 99.43%);

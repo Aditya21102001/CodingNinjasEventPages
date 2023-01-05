@@ -9,12 +9,12 @@
 </div>
 <div class="fl-mb-tag">
   <app-tags
-  [showMobileTags]="mobileTags"
-  [tagColor]="tagColor"
-  (sendTag)="pushTag($event)"
-  (clearTag)="clearTag($event)"
+    [showMobileTags]="mobileTags"
+    [tagColor]="tagColor"
+    (sendTag)="pushTag($event)"
+    (clearTag)="clearTag($event)"
   >
-</app-tags>
+  </app-tags>
 </div>
 
 <!-- mb tags ends///////////////////////////////////////////////////////// -->
@@ -25,7 +25,7 @@
   <div id="eventsWrapper" class="events-outer-wrapper">
     <div id="list-header">
       <div class="header-text">EVENTS &amp; NEWS</div>
-      <div class="header-subtitle">Learn, Compete &amp; Grow</div>
+      <div style="color: black">Learn, Compete &amp; Grow</div>
     </div>
     <div class="events-wrapper">
       <div class="tabs event-categories">
@@ -118,18 +118,18 @@
         <div class="event-cards-container">
           <!---->
 
-          <div class="events-container ng-star-inserted">
-            <div class="ng-star-inserted" *ngIf="events.length !== 0">
+          <div class="events-container">
+            <div class="cont" *ngIf="events.length !== 0">
               <div *ngFor="let event of events; let i = index" class="row">
                 <div class="event col" *ngIf="i % 2 === 0">
                   <app-card [event]="events[i]"> </app-card>
                 </div>
-                <div
+                <!-- <div
                   class="event col"
                   *ngIf="i % 2 === 0 && i < events.length - 1"
                 >
                   <app-card [event]="events[i + 1]"> </app-card>
-                </div>
+                </div> -->
                 <!---->
               </div>
             </div>
@@ -170,7 +170,7 @@
         </div>
 
         <!-- Tags Card//////////////////////////////////////////////////////////////////////////////////// -->
-        <div class="tags-container">
+        <div class="tags-container tg">
           <app-tags
             [tagColor]="tagColor"
             (sendTag)="pushTag($event)"
@@ -181,8 +181,8 @@
       <!---->
     </div>
   </div>
-  
-<!-- EVENTS PAGE ENDS//////////////////////////////////////////////////////////////-->
+
+  <!-- EVENTS PAGE ENDS//////////////////////////////////////////////////////////////-->
 
   <app-footer> </app-footer>
 </div>

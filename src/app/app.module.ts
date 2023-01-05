@@ -9,6 +9,7 @@ import { FooterComponent } from './Components/footer/footer.component';
 import { HttpClientModule } from '@angular/common/http';
 import { AllEventComponent } from './Components/all-event/all-event.component';
 import { NavbarComponent } from './Components/navbar/navbar.component';
+import { ModalComponent } from './Components/modal/modal.component';
 
 @NgModule({
   declarations: [
@@ -19,6 +20,7 @@ import { NavbarComponent } from './Components/navbar/navbar.component';
     TagsComponent,
     FooterComponent,
     NavbarComponent,
+    ModalComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, HttpClientModule],
   providers: [],

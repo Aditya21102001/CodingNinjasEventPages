@@ -29,7 +29,7 @@
 .card .glass-main {
   background-image: linear-gradient(-180deg, rgba(3, 3, 3, 0), #010101);
   position: absolute;
-  height: 100%;
+  height: 120px;
   width: 100%;
 }
 .card .main {
@@ -93,7 +93,7 @@ p {
 .card main .details .event-info-item .item-value {
   color: #212121;
   font-weight: 600;
-  font-size: 14px;
+  font-size: 12px;
 }
 
 .card main .details .event-info-item p {
@@ -124,7 +124,7 @@ p {
 
 .card main .tags-container .tag {
   height: fit-content;
-  margin-right: 8px;
+  margin-right: 6px;
   margin-bottom: 8px;
   color: #616161;
   background: #eee;
@@ -135,6 +135,7 @@ p {
 
 .card footer {
   padding: 12px;
+  padding-right: 0;
   display: flex;
   justify-content: flex-start;
   border-top: 1px solid hsla(0, 0%, 59.2%, 0.1);
@@ -177,7 +178,9 @@ p {
   line-height: 18px;
   text-align: center;
   margin-top: 1rem;
+  clip-path: polygon(0% 0%, 100% 0%, 100% 50%, 100% 100%, 0% 100%, 16.1% 51.8%);
   word-wrap: break-word;
+  padding-left: 18px;
 }
 
 .event {
