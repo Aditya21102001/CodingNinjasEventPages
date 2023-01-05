@@ -1,0 +1,14 @@
+.nav{
+  background-image: linear-gradient(to right, #70cd64, #8dd422, #3467de, #436ae8, #5153f2, #6462f7, #7470fb, #847fff, #080809, #aea6ff, #c2baff, #d4ceff);
+}
+.nav .enroll{
+  background: linear-gradient(90deg,#fa7328,#ee9f15);
+  color:white;
+}
+.nav li a:hover{
+  text-decoration: underline solid linear-gradient(90deg,#fa7328,#ee9f15) 5px;
+}
+
+.nv-item{
+  margin-left: -50px;
+}
